@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tutorial 4: JavaScript Fundamentals</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="page">
+
+    <!-- ── the RSVP card ────────────────────────────────────── -->
+    <div class="card" id="rsvp-card">
+
+      <div class="event-header">
+        <h1 class="event-title">End of Semester Party</h1>
+        <p class="event-meta">Friday, May 9 &middot; 7pm &middot; Someone's Rooftop</p>
+      </div>
+
+      <!-- string: name -->
+      <div class="field">
+        <label for="name-input">Your name</label>
+        <input type="text" id="name-input" placeholder="First name is fine">
+      </div>
+
+      <!-- boolean: going or not -->
+      <div class="rsvp-buttons">
+        <button type="button" class="btn btn-yes" id="btn-yes">Going</button>
+        <button type="button" class="btn btn-no"  id="btn-no">Can't make it</button>
+      </div>
+
+      <!-- number: guest count, hidden until yes -->
+      <div class="guest-field hidden" id="guest-field">
+        <label for="guest-input">Bringing anyone?</label>
+        <input type="number" id="guest-input" value="0" min="0" max="10">
+        <!--
+          Note: type="number" still gives you a STRING from .value
+          You have to convert it with Number().
+        -->
+      </div>
+
+      <!-- confirmation messages, hidden until a choice is made -->
+      <div class="confirmation hidden" id="confirmation"></div>
+      <div class="regret       hidden" id="regret"></div>
+
+      <!-- stretch: running total -->
+      <p class="total hidden" id="total"></p>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
