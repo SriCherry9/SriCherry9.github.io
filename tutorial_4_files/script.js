@@ -1,3 +1,4 @@
+'use strict';
 // ============================================================
 // TUTORIAL 4: JAVASCRIPT FUNDAMENTALS
 // RSVP card — wire up the behavior
