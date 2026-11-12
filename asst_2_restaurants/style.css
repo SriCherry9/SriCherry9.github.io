@@ -1,0 +1,428 @@
+/* BASE STYLES - Students can modify and extend */
+:root {
+    --primary-color: #007cba;
+    --secondary-color: #28a745;
+    --background-color: #f8f9fa;
+    --card-background: #ffffff;
+    --text-color: #333;
+    --border-color: #ddd;
+    --shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+ 
+body {
+    font-family: system-ui, sans-serif;
+    margin: 0;
+    padding: 1rem;
+    background: var(--background-color);
+    color: var(--text-color);
+}
+ 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+ 
+.view-selector {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+ 
+.view-button {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s;
+}
+ 
+.view-button:hover {
+    background: #005a87;
+}
+ 
+.view-button.active {
+    background: var(--secondary-color);
+}
+ 
+.display-container {
+    background: var(--card-background);
+    border-radius: 8px;
+    padding: 2rem;
+    min-height: 400px;
+    box-shadow: var(--shadow);
+}
+ 
+.loading {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+    padding: 2rem;
+}
+ 
+.error {
+    background: #fee;
+    border: 1px solid #fcc;
+    color: #c00;
+    padding: 1.5rem;
+    border-radius: 4px;
+    text-align: center;
+}
+ 
+/* UTILITY CLASSES FOR STUDENTS */
+.view-title {
+    margin: 0 0 1rem 0;
+    color: var(--text-color);
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.5rem;
+}
+ 
+.view-description {
+    color: #666;
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+ 
+/* Visually hidden, but still read by screen readers */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+ 
+/* CARD GRID LAYOUT */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+ 
+.restaurant-card {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    background: var(--card-background);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+ 
+.restaurant-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+ 
+/* TABLE LAYOUT */
+.table-scroll {
+    overflow-x: auto;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+ 
+.table-scroll:focus-visible {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 2px;
+}
+ 
+.restaurant-table {
+    width: 100%;
+    min-width: 760px;
+    border-collapse: collapse;
+    margin-top: 0;
+}
+ 
+.restaurant-table caption {
+    text-align: left;
+    padding: 0.75rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+ 
+.restaurant-table th,
+.restaurant-table td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+ 
+.restaurant-table thead th {
+    background: #f8f9fa;
+    font-weight: 600;
+    white-space: nowrap;
+}
+ 
+.restaurant-table tbody th {
+    font-weight: 600;
+}
+ 
+.restaurant-table tr:hover {
+    background: #f8f9fa;
+}
+ 
+.sort-button {
+    background: none;
+    border: none;
+    padding: 0.25rem;
+    font: inherit;
+    font-weight: 600;
+    color: inherit;
+    cursor: pointer;
+    border-radius: 4px;
+}
+ 
+.sort-button:hover {
+    background: #e9ecef;
+}
+ 
+.sort-button:focus-visible {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 1px;
+}
+ 
+/* CATEGORY GROUPS */
+.category-section {
+    margin-bottom: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+}
+ 
+.category-header {
+    background: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    margin: 0;
+    border-radius: 8px 8px 0 0;
+}
+ 
+.category-summary {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem 1.5rem;
+    padding: 1rem;
+    background: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    list-style: none;
+}
+ 
+.category-summary::-webkit-details-marker {
+    display: none;
+}
+ 
+.category-summary:hover {
+    background: #005a87;
+}
+ 
+.category-summary:focus-visible {
+    outline: 3px solid #ffbf47;
+    outline-offset: -3px;
+}
+ 
+.category-name {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    flex: 1 1 12rem;
+}
+ 
+.category-name h3 {
+    display: inline;
+    margin: 0;
+    font-size: 1.15rem;
+}
+ 
+.category-name h3::before {
+    content: '▸ ';
+}
+ 
+details[open] > .category-summary .category-name h3::before {
+    content: '▾ ';
+}
+ 
+.category-count {
+    font-size: 0.95rem;
+}
+ 
+.category-average {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    flex: 1 1 14rem;
+    max-width: 20rem;
+}
+ 
+.avg-bar {
+    display: block;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    overflow: hidden;
+}
+ 
+.avg-bar-fill {
+    display: block;
+    height: 100%;
+    background: #ffffff;
+    border-radius: 4px;
+}
+ 
+.category-items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: none;
+    background: var(--card-background);
+}
+ 
+.category-item {
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem 1rem;
+}
+ 
+.category-item:last-child {
+    border-bottom: none;
+}
+ 
+.item-side {
+    text-align: right;
+}
+ 
+.item-detail {
+    color: #555;
+    font-size: 0.9rem;
+}
+ 
+.failed-badge {
+    display: inline-block;
+    margin-top: 0.25rem;
+    padding: 0.15rem 0.5rem;
+    border-radius: 999px;
+    background: #e9ecef;
+    color: #333;
+    font-size: 0.85rem;
+}
+ 
+.failed-badge.has-failures {
+    background: #fde2e0;
+    color: #8a1c14;
+    font-weight: 600;
+}
+ 
+/* STATS LAYOUT */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+ 
+.stat-card {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, var(--primary-color), #0056b3);
+    color: white;
+    border-radius: 8px;
+}
+ 
+.stat-number {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+ 
+.stat-label {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+ 
+/* CHARTS LAYOUT */
+.charts-grid {
+    display: grid;
+    /* Two equal columns: each chart takes 50% of the row. minmax(0, 1fr) stops wide canvases from pushing the grid past its container. */
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    align-items: stretch;
+}
+ 
+.chart-figure {
+    margin: 0;
+    padding: 1rem;
+    background: var(--card-background);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    min-width: 0;
+    overflow: hidden;
+}
+ 
+/* The business-type chart sits on its own row across the full width.
+   The pie and the checks chart share the row below, 50% each. */
+.chart-tall {
+    grid-column: 1 / -1;
+}
+ 
+/* Chart.js needs a sized, relatively positioned parent when maintainAspectRatio is false */
+.chart-box {
+    position: relative;
+    width: 100%;
+}
+ 
+.chart-figure canvas {
+    max-width: 100%;
+}
+ 
+/* The text alternative under each chart */
+.chart-summary {
+    margin-top: 0.75rem;
+}
+ 
+.todo-implementation {
+    background: #fff3cd;
+    border: 2px dashed #ffc107;
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+    color: #856404;
+}
+ 
+.asst-box {
+    margin-top: 2rem;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+}
+ 
+/* PHONE */
+@media (max-width: 600px) {
+    .display-container {
+        padding: 1rem;
+    }
+ 
+    .item-side {
+        text-align: left;
+    }
+ 
+    /* On a phone, charts stack one per row so labels stay readable */
+    .charts-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+ 
+    .chart-tall {
+        grid-column: auto;
+    }
+}
+ 
