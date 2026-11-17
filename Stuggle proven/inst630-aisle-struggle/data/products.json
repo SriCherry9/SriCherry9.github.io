@@ -1,0 +1,7822 @@
+{
+ "meta": {
+  "source": "food_ingredients_and_allergens.csv (course-supplied dataset)",
+  "generated": "2026-10-28",
+  "rawRows": 399,
+  "recordCount": 308,
+  "featuredCount": 24,
+  "note": "Exact duplicate rows removed. Dietary flags are estimated from listed ingredients. The CSV's 'Prediction' column is kept but not used."
+ },
+ "products": [
+  {
+   "id": "almond-cookies-1",
+   "name": "Almond Cookies",
+   "featured": true,
+   "category": "Bakery",
+   "shape": "box",
+   "main": "Almonds",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [
+    "Flour"
+   ],
+   "allergens": [
+    "Almonds",
+    "Wheat",
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "chicken-noodle-soup-2",
+   "name": "Chicken Noodle Soup",
+   "featured": true,
+   "category": "Soup",
+   "shape": "can",
+   "main": "Chicken broth",
+   "sweetener": [],
+   "fatOil": [],
+   "seasoning": [
+    "Salt"
+   ],
+   "allergens": [
+    "Chicken",
+    "Wheat",
+    "Celery"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "soy-milk-239",
+   "name": "Soy Milk",
+   "featured": true,
+   "category": "Drinks",
+   "shape": "carton",
+   "main": "Soybeans",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [],
+   "seasoning": [
+    "Emulsifiers"
+   ],
+   "allergens": [
+    "Soybeans"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "peanut-butter-222",
+   "name": "Peanut Butter",
+   "featured": true,
+   "category": "Pantry",
+   "shape": "jar",
+   "main": "Peanuts",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Vegetable oil"
+   ],
+   "seasoning": [
+    "Salt"
+   ],
+   "allergens": [
+    "Peanuts"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "fish-sticks-87",
+   "name": "Fish Sticks",
+   "featured": true,
+   "category": "Seafood",
+   "shape": "box",
+   "main": "Fish fillets",
+   "sweetener": [],
+   "fatOil": [
+    "Vegetable oil"
+   ],
+   "seasoning": [
+    "Salt"
+   ],
+   "allergens": [
+    "Fish"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "lemonade-115",
+   "name": "Lemonade",
+   "featured": true,
+   "category": "Drinks",
+   "shape": "bottle",
+   "main": "Lemon juice",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Water"
+   ],
+   "seasoning": [],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "cheddar-cheese-3",
+   "name": "Cheddar Cheese",
+   "featured": true,
+   "category": "Dairy",
+   "shape": "box",
+   "main": "Cheese",
+   "sweetener": [],
+   "fatOil": [],
+   "seasoning": [
+    "Salt"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "tiramisu-285",
+   "name": "Tiramisu",
+   "featured": true,
+   "category": "Dessert",
+   "shape": "bowl",
+   "main": "Ladyfingers",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Mascarpone cheese"
+   ],
+   "seasoning": [
+    "Coffee",
+    "Cocoa"
+   ],
+   "allergens": [
+    "Wheat",
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "miso-soup-241",
+   "name": "Miso Soup",
+   "featured": true,
+   "category": "Soup",
+   "shape": "bowl",
+   "main": "Miso paste",
+   "sweetener": [],
+   "fatOil": [],
+   "seasoning": [
+    "Tofu",
+    "Seaweed"
+   ],
+   "allergens": [
+    "Soybeans"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "vanilla-ice-cream-101",
+   "name": "Vanilla Ice Cream",
+   "featured": true,
+   "category": "Dessert",
+   "shape": "jar",
+   "main": "Milk",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Cream"
+   ],
+   "seasoning": [
+    "Vanilla extract"
+   ],
+   "allergens": [
+    "Milk"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "orange-juice-106",
+   "name": "Orange Juice",
+   "featured": true,
+   "category": "Drinks",
+   "shape": "carton",
+   "main": "Oranges",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [],
+   "seasoning": [],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "egg-salad-sandwich-85",
+   "name": "Egg Salad Sandwich",
+   "featured": true,
+   "category": "Deli",
+   "shape": "bag",
+   "main": "Eggs",
+   "sweetener": [
+    "Mayonnaise"
+   ],
+   "fatOil": [],
+   "seasoning": [
+    "Celery",
+    "Mustard"
+   ],
+   "allergens": [
+    "Eggs",
+    "Mustard"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "shrimp-scampi-234",
+   "name": "Shrimp Scampi",
+   "featured": true,
+   "category": "Seafood",
+   "shape": "bowl",
+   "main": "Shrimp",
+   "sweetener": [],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [
+    "Garlic",
+    "Lemon"
+   ],
+   "allergens": [
+    "Shellfish",
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "apple-105",
+   "name": "Apple",
+   "featured": true,
+   "category": "Fresh",
+   "shape": "bag",
+   "main": "Apples",
+   "sweetener": [],
+   "fatOil": [],
+   "seasoning": [],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "chocolate-cake-302",
+   "name": "Chocolate Cake",
+   "featured": true,
+   "category": "Bakery",
+   "shape": "box",
+   "main": "Flour",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [
+    "Cocoa powder"
+   ],
+   "allergens": [
+    "Wheat",
+    "Dairy",
+    "Cocoa"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "quinoa-salad-111",
+   "name": "Quinoa Salad",
+   "featured": true,
+   "category": "Fresh",
+   "shape": "bowl",
+   "main": "Quinoa",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Lemon juice",
+    "Herbs"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "banana-bread-307",
+   "name": "Banana Bread",
+   "featured": true,
+   "category": "Bakery",
+   "shape": "bag",
+   "main": "Bananas",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [
+    "Cinnamon",
+    "Nuts"
+   ],
+   "allergens": [
+    "Wheat",
+    "Dairy",
+    "Nuts"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "tuna-salad-95",
+   "name": "Tuna Salad",
+   "featured": true,
+   "category": "Deli",
+   "shape": "can",
+   "main": "Tuna",
+   "sweetener": [
+    "Mayonnaise"
+   ],
+   "fatOil": [],
+   "seasoning": [
+    "Celery",
+    "Onion"
+   ],
+   "allergens": [
+    "Fish",
+    "Eggs"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "gulab-jamun-63",
+   "name": "Gulab Jamun",
+   "featured": true,
+   "category": "Dessert",
+   "shape": "jar",
+   "main": "Milk solids",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Ghee"
+   ],
+   "seasoning": [
+    "Cardamom syrup"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "pesto-chicken-224",
+   "name": "Pesto Chicken",
+   "featured": true,
+   "category": "Mains",
+   "shape": "jar",
+   "main": "Chicken",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Pesto sauce"
+   ],
+   "allergens": [
+    "Pine nuts",
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "masala-dosa-203",
+   "name": "Masala Dosa",
+   "featured": true,
+   "category": "Mains",
+   "shape": "bag",
+   "main": "Rice",
+   "sweetener": [],
+   "fatOil": [
+    "Oil"
+   ],
+   "seasoning": [
+    "Potato masala",
+    "Spices"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "chicken-satay-221",
+   "name": "Chicken Satay",
+   "featured": true,
+   "category": "Mains",
+   "shape": "box",
+   "main": "Chicken",
+   "sweetener": [],
+   "fatOil": [
+    "Peanut butter"
+   ],
+   "seasoning": [
+    "Soy sauce"
+   ],
+   "allergens": [
+    "Peanuts"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "oatmeal-220",
+   "name": "Oatmeal",
+   "featured": true,
+   "category": "Breakfast",
+   "shape": "bag",
+   "main": "Oats",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Milk"
+   ],
+   "seasoning": [
+    "Cinnamon"
+   ],
+   "allergens": [
+    "Oats",
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "lobster-roll-236",
+   "name": "Lobster Roll",
+   "featured": true,
+   "category": "Deli",
+   "shape": "bag",
+   "main": "Lobster",
+   "sweetener": [],
+   "fatOil": [
+    "Mayonnaise"
+   ],
+   "seasoning": [
+    "Celery",
+    "Lemon juice"
+   ],
+   "allergens": [
+    "Shellfish",
+    "Eggs"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "ranch-dressing-4",
+   "name": "Ranch Dressing",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Buttermilk",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Vegetable oil"
+   ],
+   "seasoning": [
+    "Garlic",
+    "Herbs"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "caramel-popcorn-5",
+   "name": "Caramel Popcorn",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Popcorn",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [
+    "Salt"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "caesar-salad-6",
+   "name": "Caesar Salad",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Romaine lettuce",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Parmesan cheese"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "caesar-wrap-7",
+   "name": "Caesar Wrap",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Grilled chicken",
+   "sweetener": [],
+   "fatOil": [
+    "Caesar dressing"
+   ],
+   "seasoning": [
+    "Lettuce",
+    "Parmesan cheese"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "strawberry-smoothie-8",
+   "name": "Strawberry Smoothie",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Strawberries",
+   "sweetener": [
+    "Honey"
+   ],
+   "fatOil": [
+    "Yogurt (milk, cultures)"
+   ],
+   "seasoning": [],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "cheese-pizza-9",
+   "name": "Cheese Pizza",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Cheese",
+   "sweetener": [],
+   "fatOil": [],
+   "seasoning": [
+    "Tomato sauce"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "margherita-pizza-10",
+   "name": "Margherita Pizza",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Cheese",
+   "sweetener": [],
+   "fatOil": [],
+   "seasoning": [
+    "Tomato sauce",
+    "Basil"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "mashed-potatoes-11",
+   "name": "Mashed Potatoes",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Potatoes",
+   "sweetener": [],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [
+    "Salt",
+    "Pepper"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "greek-yogurt-12",
+   "name": "Greek Yogurt",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Yogurt (milk, cultures)",
+   "sweetener": [],
+   "fatOil": [],
+   "seasoning": [],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "caesar-salad-wrap-13",
+   "name": "Caesar Salad Wrap",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Grilled chicken",
+   "sweetener": [],
+   "fatOil": [
+    "Caesar dressing"
+   ],
+   "seasoning": [
+    "Lettuce",
+    "Parmesan cheese"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "caprese-salad-14",
+   "name": "Caprese Salad",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Tomatoes",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Mozzarella cheese",
+    "Basil"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "berry-smoothie-15",
+   "name": "Berry Smoothie",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Mixed berries",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Yogurt (milk, cultures)"
+   ],
+   "seasoning": [],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "caesar-salad-16",
+   "name": "Caesar Salad",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Romaine lettuce",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Caesar dressing"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "berry-parfait-17",
+   "name": "Berry Parfait",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Mixed berries",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Yogurt (milk, cultures)"
+   ],
+   "seasoning": [
+    "Granola"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "chicken-alfredo-18",
+   "name": "Chicken Alfredo",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Chicken",
+   "sweetener": [],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [
+    "Cream",
+    "Parmesan cheese"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "pesto-pizza-19",
+   "name": "Pesto Pizza",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Pesto sauce",
+   "sweetener": [],
+   "fatOil": [],
+   "seasoning": [
+    "Mozzarella cheese",
+    "Basil"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "beef-stroganoff-20",
+   "name": "Beef Stroganoff",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Beef",
+   "sweetener": [],
+   "fatOil": [
+    "Sour cream"
+   ],
+   "seasoning": [
+    "Mushroom",
+    "Onion"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "banana-smoothie-21",
+   "name": "Banana Smoothie",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Bananas",
+   "sweetener": [
+    "Honey"
+   ],
+   "fatOil": [
+    "Yogurt (milk, cultures)"
+   ],
+   "seasoning": [],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "watermelon-salad-22",
+   "name": "Watermelon Salad",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Watermelon",
+   "sweetener": [],
+   "fatOil": [],
+   "seasoning": [
+    "Feta cheese",
+    "Mint"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "chicken-parmesan-23",
+   "name": "Chicken Parmesan",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Chicken",
+   "sweetener": [],
+   "fatOil": [
+    "Bread crumbs",
+    "Parmesan cheese"
+   ],
+   "seasoning": [
+    "Marinara sauce"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "mango-lassi-24",
+   "name": "Mango Lassi",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Mango",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Yogurt (milk, cultures)"
+   ],
+   "seasoning": [
+    "Cardamom"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "greek-salad-25",
+   "name": "Greek Salad",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Cucumbers",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Feta cheese",
+    "Olives"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "butternut-squash-soup-26",
+   "name": "Butternut Squash Soup",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Butternut squash",
+   "sweetener": [],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [
+    "Vegetable broth"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "margherita-pasta-27",
+   "name": "Margherita Pasta",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Pasta",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Fresh tomatoes",
+    "Mozzarella"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "greek-gyro-wrap-28",
+   "name": "Greek Gyro Wrap",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Lamb",
+   "sweetener": [],
+   "fatOil": [],
+   "seasoning": [
+    "Tzatziki sauce",
+    "Tomatoes",
+    "Onions"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "spinach-and-feta-stuffed-chicken-29",
+   "name": "Spinach and Feta Stuffed Chicken",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Chicken",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Spinach",
+    "Feta cheese"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "chicken-fettuccine-alfredo-30",
+   "name": "Chicken Fettuccine Alfredo",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Chicken",
+   "sweetener": [],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [
+    "Cream",
+    "Parmesan cheese"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "caprese-sandwich-31",
+   "name": "Caprese Sandwich",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Tomatoes",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Mozzarella cheese",
+    "Basil"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "mushroom-risotto-32",
+   "name": "Mushroom Risotto",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Mushrooms",
+   "sweetener": [],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [
+    "Arborio rice",
+    "Parmesan cheese"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "greek-yogurt-parfait-33",
+   "name": "Greek Yogurt Parfait",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Greek yogurt",
+   "sweetener": [
+    "Honey"
+   ],
+   "fatOil": [],
+   "seasoning": [
+    "Granola",
+    "Mixed berries"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "eggplant-parmesan-34",
+   "name": "Eggplant Parmesan",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Eggplant",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Marinara sauce",
+    "Cheese"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "banana-pudding-35",
+   "name": "Banana Pudding",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Bananas",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Milk"
+   ],
+   "seasoning": [
+    "Vanilla pudding mix",
+    "Cookies"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "margherita-pizza-36",
+   "name": "Margherita Pizza",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Pizza dough",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Mozzarella cheese",
+    "Tomatoes",
+    "Basil"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "chicken-caesar-wrap-37",
+   "name": "Chicken Caesar Wrap",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Chicken",
+   "sweetener": [],
+   "fatOil": [
+    "Caesar dressing"
+   ],
+   "seasoning": [
+    "Romaine lettuce",
+    "Parmesan cheese"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "greek-spanakopita-38",
+   "name": "Greek Spanakopita",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Spinach",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Feta cheese",
+    "Phyllo dough"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "mushroom-soup-39",
+   "name": "Mushroom Soup",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Mushrooms",
+   "sweetener": [],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [
+    "Vegetable broth"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "greek-yogurt-40",
+   "name": "Greek Yogurt",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Yogurt (milk, cultures)",
+   "sweetener": [
+    "Honey"
+   ],
+   "fatOil": [],
+   "seasoning": [],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "spinach-artichoke-dip-41",
+   "name": "Spinach Artichoke Dip",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Spinach",
+   "sweetener": [],
+   "fatOil": [
+    "Cream cheese",
+    "Sour cream"
+   ],
+   "seasoning": [
+    "Parmesan cheese",
+    "Garlic"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "chocolate-mousse-42",
+   "name": "Chocolate Mousse",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Chocolate",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Heavy cream"
+   ],
+   "seasoning": [
+    "Vanilla extract"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "stuffed-portobello-mushrooms-43",
+   "name": "Stuffed Portobello Mushrooms",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Portobello mushrooms",
+   "sweetener": [],
+   "fatOil": [],
+   "seasoning": [
+    "Cheese",
+    "Breadcrumbs"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "tandoori-chicken-44",
+   "name": "Tandoori Chicken",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Chicken",
+   "sweetener": [],
+   "fatOil": [
+    "Yogurt"
+   ],
+   "seasoning": [
+    "Tandoori spices"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "beef-stroganoff-45",
+   "name": "Beef Stroganoff",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Beef",
+   "sweetener": [],
+   "fatOil": [
+    "Sour cream"
+   ],
+   "seasoning": [
+    "Mushrooms",
+    "Onions"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "strawberry-smoothie-46",
+   "name": "Strawberry Smoothie",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Strawberries",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Yogurt"
+   ],
+   "seasoning": [
+    "Milk"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "baked-garlic-parmesan-chicken-47",
+   "name": "Baked Garlic Parmesan Chicken",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Chicken",
+   "sweetener": [],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [
+    "Parmesan cheese",
+    "Garlic"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "mushroom-and-goat-cheese-flatbread-48",
+   "name": "Mushroom and Goat Cheese Flatbread",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Mushrooms",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Goat cheese",
+    "Herbs"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "margherita-pasta-49",
+   "name": "Margherita Pasta",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Pasta",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Mozzarella cheese",
+    "Tomatoes",
+    "Basil"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "pumpkin-soup-50",
+   "name": "Pumpkin Soup",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Pumpkin",
+   "sweetener": [],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [
+    "Nutmeg",
+    "Cream"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "butternut-squash-soup-51",
+   "name": "Butternut Squash Soup",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Butternut squash",
+   "sweetener": [],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [
+    "Nutmeg",
+    "Cream"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "caprese-skewers-52",
+   "name": "Caprese Skewers",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Tomatoes",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Mozzarella cheese",
+    "Basil"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "chicken-piccata-53",
+   "name": "Chicken Piccata",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Chicken",
+   "sweetener": [],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [
+    "Lemon",
+    "Capers"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "berry-parfait-54",
+   "name": "Berry Parfait",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Berries",
+   "sweetener": [
+    "Honey"
+   ],
+   "fatOil": [
+    "Yogurt"
+   ],
+   "seasoning": [
+    "Granola"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "stuffed-mushrooms-55",
+   "name": "Stuffed Mushrooms",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Mushrooms",
+   "sweetener": [],
+   "fatOil": [],
+   "seasoning": [
+    "Cheese",
+    "Breadcrumbs"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "butter-chicken-56",
+   "name": "Butter Chicken",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Chicken",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [
+    "Tomato sauce",
+    "Cream"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "palak-paneer-57",
+   "name": "Palak Paneer",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Spinach",
+   "sweetener": [],
+   "fatOil": [
+    "Ghee"
+   ],
+   "seasoning": [
+    "Paneer",
+    "Spices"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "rogan-josh-58",
+   "name": "Rogan Josh",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Lamb",
+   "sweetener": [],
+   "fatOil": [
+    "Ghee"
+   ],
+   "seasoning": [
+    "Yogurt",
+    "Kashmiri red chili"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "paneer-tikka-59",
+   "name": "Paneer Tikka",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Paneer",
+   "sweetener": [],
+   "fatOil": [
+    "Oil"
+   ],
+   "seasoning": [
+    "Tikka masala",
+    "Spices"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "dal-makhani-60",
+   "name": "Dal Makhani",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Lentils",
+   "sweetener": [],
+   "fatOil": [
+    "Ghee"
+   ],
+   "seasoning": [
+    "Cream",
+    "Spices"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "malai-kofta-61",
+   "name": "Malai Kofta",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Cottage cheese",
+   "sweetener": [],
+   "fatOil": [
+    "Ghee"
+   ],
+   "seasoning": [
+    "Creamy tomato sauce"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "chicken-tikka-masala-62",
+   "name": "Chicken Tikka Masala",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Chicken",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Ghee"
+   ],
+   "seasoning": [
+    "Tomato sauce",
+    "Cream"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "chicken-korma-64",
+   "name": "Chicken Korma",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Chicken",
+   "sweetener": [],
+   "fatOil": [
+    "Ghee"
+   ],
+   "seasoning": [
+    "Creamy sauce",
+    "Spices"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "malai-chicken-tikka-65",
+   "name": "Malai Chicken Tikka",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Chicken",
+   "sweetener": [],
+   "fatOil": [
+    "Cream"
+   ],
+   "seasoning": [
+    "Spices"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "dahi-vada-66",
+   "name": "Dahi Vada",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Lentil dumplings",
+   "sweetener": [],
+   "fatOil": [
+    "Yogurt"
+   ],
+   "seasoning": [
+    "Tamarind chutney",
+    "Spices"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "chicken-malai-tikka-67",
+   "name": "Chicken Malai Tikka",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Chicken",
+   "sweetener": [],
+   "fatOil": [
+    "Cream"
+   ],
+   "seasoning": [
+    "Spices"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "matar-paneer-68",
+   "name": "Matar Paneer",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Paneer",
+   "sweetener": [],
+   "fatOil": [
+    "Ghee"
+   ],
+   "seasoning": [
+    "Peas",
+    "Spices"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "rasgulla-69",
+   "name": "Rasgulla",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Paneer",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [],
+   "seasoning": [
+    "Rose water",
+    "Syrup"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "rabri-70",
+   "name": "Rabri",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Milk",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Ghee"
+   ],
+   "seasoning": [
+    "Cardamom",
+    "Nuts"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "kheer-71",
+   "name": "Kheer",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Rice",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Ghee"
+   ],
+   "seasoning": [
+    "Cardamom",
+    "Nuts"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "rasmalai-72",
+   "name": "Rasmalai",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Paneer",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Milk",
+    "Ghee"
+   ],
+   "seasoning": [
+    "Cardamom",
+    "Nuts"
+   ],
+   "allergens": [
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "chicken-caesar-salad-73",
+   "name": "Chicken Caesar Salad",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Chicken breast",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Parmesan cheese"
+   ],
+   "allergens": [
+    "Dairy",
+    "Anchovies"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "chocolate-mousse-74",
+   "name": "Chocolate Mousse",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Chocolate",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Heavy cream"
+   ],
+   "seasoning": [
+    "Vanilla extract"
+   ],
+   "allergens": [
+    "Dairy",
+    "Cocoa"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "quiche-lorraine-75",
+   "name": "Quiche Lorraine",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Bacon",
+   "sweetener": [],
+   "fatOil": [
+    "Heavy cream"
+   ],
+   "seasoning": [
+    "Cheese",
+    "Eggs"
+   ],
+   "allergens": [
+    "Dairy",
+    "Eggs"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "chicken-piccata-76",
+   "name": "Chicken Piccata",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Chicken",
+   "sweetener": [],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [
+    "Lemon",
+    "Capers"
+   ],
+   "allergens": [
+    "Dairy",
+    "Fish"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "chicken-tikka-masala-77",
+   "name": "Chicken Tikka Masala",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Chicken",
+   "sweetener": [],
+   "fatOil": [
+    "Ghee"
+   ],
+   "seasoning": [
+    "Tikka masala sauce"
+   ],
+   "allergens": [
+    "Dairy",
+    "Ghee"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "sweet-potato-casserole-78",
+   "name": "Sweet Potato Casserole",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Sweet potatoes",
+   "sweetener": [
+    "Brown sugar"
+   ],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [
+    "Cinnamon",
+    "Nutmeg"
+   ],
+   "allergens": [
+    "Dairy",
+    "Nuts"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "baked-brie-79",
+   "name": "Baked Brie",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Brie cheese",
+   "sweetener": [],
+   "fatOil": [],
+   "seasoning": [
+    "Herbs",
+    "Nuts"
+   ],
+   "allergens": [
+    "Dairy",
+    "Nuts"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "french-onion-soup-80",
+   "name": "French Onion Soup",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Onions",
+   "sweetener": [],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [
+    "Beef broth",
+    "Cheese",
+    "Bread"
+   ],
+   "allergens": [
+    "Dairy",
+    "Wheat"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "greek-gyro-81",
+   "name": "Greek Gyro",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Lamb/Chicken",
+   "sweetener": [],
+   "fatOil": [],
+   "seasoning": [
+    "Tzatziki sauce",
+    "Vegetables"
+   ],
+   "allergens": [
+    "Dairy",
+    "Wheat"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "omelette-82",
+   "name": "Omelette",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Eggs",
+   "sweetener": [],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [
+    "Salt",
+    "Pepper"
+   ],
+   "allergens": [
+    "Eggs"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "egg-salad-83",
+   "name": "Egg Salad",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Eggs",
+   "sweetener": [
+    "Mayonnaise"
+   ],
+   "fatOil": [],
+   "seasoning": [
+    "Celery",
+    "Onion"
+   ],
+   "allergens": [
+    "Eggs"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "quiche-84",
+   "name": "Quiche",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Eggs",
+   "sweetener": [],
+   "fatOil": [
+    "Cheese"
+   ],
+   "seasoning": [
+    "Vegetables"
+   ],
+   "allergens": [
+    "Eggs",
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "egg-fried-rice-86",
+   "name": "Egg Fried Rice",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Eggs",
+   "sweetener": [],
+   "fatOil": [
+    "Sesame oil"
+   ],
+   "seasoning": [
+    "Soy sauce"
+   ],
+   "allergens": [
+    "Eggs",
+    "Soybeans"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "baked-salmon-88",
+   "name": "Baked Salmon",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Salmon fillet",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Lemon",
+    "Herbs"
+   ],
+   "allergens": [
+    "Fish"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "teriyaki-salmon-89",
+   "name": "Teriyaki Salmon",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Salmon",
+   "sweetener": [],
+   "fatOil": [
+    "Vegetable oil"
+   ],
+   "seasoning": [
+    "Teriyaki sauce"
+   ],
+   "allergens": [
+    "Fish"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "baked-salmon-90",
+   "name": "Baked Salmon",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Salmon",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Lemon",
+    "Herbs"
+   ],
+   "allergens": [
+    "Fish"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "lemon-dill-salmon-91",
+   "name": "Lemon Dill Salmon",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Salmon",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Lemon",
+    "Dill"
+   ],
+   "allergens": [
+    "Fish"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "malabar-fish-curry-92",
+   "name": "Malabar Fish Curry",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Fish",
+   "sweetener": [],
+   "fatOil": [
+    "Coconut oil"
+   ],
+   "seasoning": [
+    "Tamarind",
+    "Spices"
+   ],
+   "allergens": [
+    "Fish",
+    "Coconut"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "baked-cod-93",
+   "name": "Baked Cod",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Cod",
+   "sweetener": [],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [
+    "Lemon",
+    "Herbs"
+   ],
+   "allergens": [
+    "Fish",
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "tuna-sandwich-94",
+   "name": "Tuna Sandwich",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Tuna",
+   "sweetener": [
+    "Mayonnaise"
+   ],
+   "fatOil": [],
+   "seasoning": [
+    "Salt",
+    "Pepper"
+   ],
+   "allergens": [
+    "Fish",
+    "Eggs"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "sushi-96",
+   "name": "Sushi",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Fish (salmon, tuna)",
+   "sweetener": [
+    "Rice vinegar"
+   ],
+   "fatOil": [
+    "Sesame oil"
+   ],
+   "seasoning": [
+    "Soy sauce"
+   ],
+   "allergens": [
+    "Fish",
+    "Soybeans"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "teriyaki-salmon-97",
+   "name": "Teriyaki Salmon",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Salmon fillet",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Soy sauce"
+   ],
+   "seasoning": [
+    "Ginger",
+    "Garlic"
+   ],
+   "allergens": [
+    "Fish",
+    "Soybeans"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "sushi-bowl-98",
+   "name": "Sushi Bowl",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Sushi rice",
+   "sweetener": [],
+   "fatOil": [
+    "Soy sauce"
+   ],
+   "seasoning": [
+    "Raw fish",
+    "Vegetables"
+   ],
+   "allergens": [
+    "Fish",
+    "Soybeans"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "honey-soy-glazed-salmon-99",
+   "name": "Honey Soy Glazed Salmon",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Salmon",
+   "sweetener": [
+    "Honey"
+   ],
+   "fatOil": [
+    "Soy sauce"
+   ],
+   "seasoning": [
+    "Garlic",
+    "Ginger"
+   ],
+   "allergens": [
+    "Fish",
+    "Soybeans"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "milk-chocolate-100",
+   "name": "Milk Chocolate",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Sugar",
+   "sweetener": [
+    "Cocoa butter"
+   ],
+   "fatOil": [
+    "Milk powder"
+   ],
+   "seasoning": [
+    "Vanilla extract"
+   ],
+   "allergens": [
+    "Milk"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "vanilla-yogurt-102",
+   "name": "Vanilla Yogurt",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Yogurt (milk, cultures)",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [],
+   "seasoning": [
+    "Vanilla extract"
+   ],
+   "allergens": [
+    "Milk"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "strawberry-yogurt-103",
+   "name": "Strawberry Yogurt",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Yogurt (milk, cultures)",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [],
+   "seasoning": [
+    "Pectin"
+   ],
+   "allergens": [
+    "Milk",
+    "Strawberries"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "tomato-soup-104",
+   "name": "Tomato Soup",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Tomatoes",
+   "sweetener": [],
+   "fatOil": [],
+   "seasoning": [
+    "Salt",
+    "Sugar"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "greek-salad-107",
+   "name": "Greek Salad",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Cucumber",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Lemon juice"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "spaghetti-bolognese-108",
+   "name": "Spaghetti Bolognese",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Ground beef",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Tomato sauce"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "honey-mustard-chicken-109",
+   "name": "Honey Mustard Chicken",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Chicken breast",
+   "sweetener": [
+    "Honey"
+   ],
+   "fatOil": [
+    "Mustard"
+   ],
+   "seasoning": [
+    "Vegetable oil"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "bbq-ribs-110",
+   "name": "BBQ Ribs",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Pork ribs",
+   "sweetener": [
+    "Brown sugar"
+   ],
+   "fatOil": [
+    "Vegetable oil"
+   ],
+   "seasoning": [
+    "BBQ sauce"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "vegetable-stir-fry-112",
+   "name": "Vegetable Stir-Fry",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Mixed vegetables",
+   "sweetener": [],
+   "fatOil": [
+    "Vegetable oil"
+   ],
+   "seasoning": [
+    "Soy sauce"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": false
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "beef-burger-113",
+   "name": "Beef Burger",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Ground beef",
+   "sweetener": [],
+   "fatOil": [
+    "Vegetable oil"
+   ],
+   "seasoning": [
+    "Salt",
+    "Pepper"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "french-fries-114",
+   "name": "French Fries",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Potatoes",
+   "sweetener": [],
+   "fatOil": [
+    "Vegetable oil"
+   ],
+   "seasoning": [
+    "Salt"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "gazpacho-116",
+   "name": "Gazpacho",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Tomatoes",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Garlic",
+    "Herbs"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "beef-tacos-117",
+   "name": "Beef Tacos",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Ground beef",
+   "sweetener": [],
+   "fatOil": [
+    "Vegetable oil"
+   ],
+   "seasoning": [
+    "Taco seasoning"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "lentil-soup-118",
+   "name": "Lentil Soup",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Lentils",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Vegetables"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "chicken-curry-119",
+   "name": "Chicken Curry",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Chicken",
+   "sweetener": [],
+   "fatOil": [
+    "Vegetable oil"
+   ],
+   "seasoning": [
+    "Curry powder"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "ratatouille-120",
+   "name": "Ratatouille",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Eggplant",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Tomatoes"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "pesto-pasta-121",
+   "name": "Pesto Pasta",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Pasta",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Basil",
+    "Garlic"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": false
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "chicken-stir-fry-122",
+   "name": "Chicken Stir-Fry",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Chicken",
+   "sweetener": [],
+   "fatOil": [
+    "Vegetable oil"
+   ],
+   "seasoning": [
+    "Soy sauce"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": false
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "veggie-burger-123",
+   "name": "Veggie Burger",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Mixed vegetables",
+   "sweetener": [],
+   "fatOil": [
+    "Vegetable oil"
+   ],
+   "seasoning": [
+    "Seasonings"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "vegetable-soup-124",
+   "name": "Vegetable Soup",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Mixed vegetables",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Seasonings"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "spinach-salad-125",
+   "name": "Spinach Salad",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Spinach",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Balsamic vinegar"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "chicken-enchiladas-126",
+   "name": "Chicken Enchiladas",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Chicken",
+   "sweetener": [],
+   "fatOil": [
+    "Vegetable oil"
+   ],
+   "seasoning": [
+    "Enchilada sauce"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "minestrone-soup-127",
+   "name": "Minestrone Soup",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Vegetables",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Tomato broth"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "salsa-128",
+   "name": "Salsa",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Tomatoes",
+   "sweetener": [],
+   "fatOil": [],
+   "seasoning": [
+    "Onion",
+    "Cilantro"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "lemon-garlic-chicken-129",
+   "name": "Lemon Garlic Chicken",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Chicken",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Lemon juice",
+    "Garlic"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "pancetta-pasta-130",
+   "name": "Pancetta Pasta",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Pasta",
+   "sweetener": [],
+   "fatOil": [
+    "Pancetta"
+   ],
+   "seasoning": [
+    "Garlic",
+    "Herbs"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": false
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "chicken-teriyaki-131",
+   "name": "Chicken Teriyaki",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Chicken",
+   "sweetener": [],
+   "fatOil": [
+    "Vegetable oil"
+   ],
+   "seasoning": [
+    "Teriyaki sauce"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": false
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "spinach-stuffed-chicken-132",
+   "name": "Spinach Stuffed Chicken",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Chicken",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Spinach",
+    "Garlic"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "coconut-curry-133",
+   "name": "Coconut Curry",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Chicken",
+   "sweetener": [],
+   "fatOil": [
+    "Coconut milk"
+   ],
+   "seasoning": [
+    "Curry paste"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "apple-cider-134",
+   "name": "Apple Cider",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Apples",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [],
+   "seasoning": [
+    "Cinnamon"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "ratatouille-135",
+   "name": "Ratatouille",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Eggplant",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Tomatoes",
+    "Zucchini"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "avocado-toast-136",
+   "name": "Avocado Toast",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Avocado",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Salt",
+    "Pepper"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": false
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "beef-stir-fry-137",
+   "name": "Beef Stir-Fry",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Beef",
+   "sweetener": [],
+   "fatOil": [
+    "Vegetable oil"
+   ],
+   "seasoning": [
+    "Soy sauce"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": false
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "black-bean-soup-138",
+   "name": "Black Bean Soup",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Black beans",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Vegetables"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "cucumber-salad-139",
+   "name": "Cucumber Salad",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Cucumber",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Lemon juice",
+    "Dill"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "fruit-salad-140",
+   "name": "Fruit Salad",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Mixed fruits",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [],
+   "seasoning": [
+    "Lemon juice"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "sausage-pizza-141",
+   "name": "Sausage Pizza",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Sausage",
+   "sweetener": [],
+   "fatOil": [],
+   "seasoning": [
+    "Mozzarella cheese"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "chicken-fajitas-142",
+   "name": "Chicken Fajitas",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Chicken",
+   "sweetener": [],
+   "fatOil": [
+    "Vegetable oil"
+   ],
+   "seasoning": [
+    "Fajita seasoning"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "mango-salsa-143",
+   "name": "Mango Salsa",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Mango",
+   "sweetener": [],
+   "fatOil": [],
+   "seasoning": [
+    "Red onion",
+    "Lime"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "lentil-curry-144",
+   "name": "Lentil Curry",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Lentils",
+   "sweetener": [],
+   "fatOil": [
+    "Coconut milk"
+   ],
+   "seasoning": [
+    "Curry powder"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "green-smoothie-145",
+   "name": "Green Smoothie",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Spinach",
+   "sweetener": [
+    "Honey"
+   ],
+   "fatOil": [
+    "Avocado"
+   ],
+   "seasoning": [
+    "Almond milk"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "stuffed-bell-peppers-146",
+   "name": "Stuffed Bell Peppers",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Bell peppers",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Ground meat",
+    "Rice"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "beef-and-broccoli-147",
+   "name": "Beef and Broccoli",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Beef",
+   "sweetener": [],
+   "fatOil": [
+    "Vegetable oil"
+   ],
+   "seasoning": [
+    "Soy sauce"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": false
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "cabbage-rolls-148",
+   "name": "Cabbage Rolls",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Cabbage",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Ground meat",
+    "Rice"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": false
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "caramel-apple-149",
+   "name": "Caramel Apple",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Apples",
+   "sweetener": [
+    "Caramel"
+   ],
+   "fatOil": [],
+   "seasoning": [],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "sweet-potato-fries-150",
+   "name": "Sweet Potato Fries",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Sweet potatoes",
+   "sweetener": [],
+   "fatOil": [
+    "Vegetable oil"
+   ],
+   "seasoning": [
+    "Salt",
+    "Paprika"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "beef-chili-151",
+   "name": "Beef Chili",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Ground beef",
+   "sweetener": [],
+   "fatOil": [],
+   "seasoning": [
+    "Chili powder"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "pesto-chicken-152",
+   "name": "Pesto Chicken",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Chicken",
+   "sweetener": [],
+   "fatOil": [
+    "Pesto sauce"
+   ],
+   "seasoning": [],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "beef-burritos-153",
+   "name": "Beef Burritos",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Ground beef",
+   "sweetener": [],
+   "fatOil": [
+    "Vegetable oil"
+   ],
+   "seasoning": [
+    "Taco seasoning"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "chicken-shawarma-154",
+   "name": "Chicken Shawarma",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Chicken",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Shawarma spices"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "stuffed-mushrooms-155",
+   "name": "Stuffed Mushrooms",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Mushrooms",
+   "sweetener": [],
+   "fatOil": [],
+   "seasoning": [
+    "Garlic",
+    "Herbs"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "zucchini-noodles-156",
+   "name": "Zucchini Noodles",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Zucchini",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Garlic",
+    "Herbs"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": false
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "sweet-and-sour-chicken-157",
+   "name": "Sweet and Sour Chicken",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Chicken",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Vegetable oil"
+   ],
+   "seasoning": [
+    "Pineapple",
+    "Bell peppers"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "beef-kabobs-158",
+   "name": "Beef Kabobs",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Beef",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Seasonings"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "tomato-bruschetta-159",
+   "name": "Tomato Bruschetta",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Tomatoes",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Garlic",
+    "Basil"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "quinoa-stuffed-peppers-160",
+   "name": "Quinoa Stuffed Peppers",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Quinoa",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Vegetables",
+    "Spices"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "veggie-omelette-161",
+   "name": "Veggie Omelette",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Mixed vegetables",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Salt",
+    "Pepper"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "ratatouille-162",
+   "name": "Ratatouille",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Vegetables",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Herbs",
+    "Garlic"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "beef-tacos-163",
+   "name": "Beef Tacos",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Beef",
+   "sweetener": [],
+   "fatOil": [
+    "Vegetable oil"
+   ],
+   "seasoning": [
+    "Taco seasoning"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "quinoa-salad-164",
+   "name": "Quinoa Salad",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Quinoa",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Lemon juice",
+    "Vegetables"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "buffalo-wings-165",
+   "name": "Buffalo Wings",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Chicken wings",
+   "sweetener": [],
+   "fatOil": [
+    "Vegetable oil"
+   ],
+   "seasoning": [
+    "Buffalo sauce"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "stuffed-cabbage-rolls-166",
+   "name": "Stuffed Cabbage Rolls",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Cabbage",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Ground meat",
+    "Rice"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": false
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "orange-chicken-167",
+   "name": "Orange Chicken",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Chicken",
+   "sweetener": [],
+   "fatOil": [
+    "Vegetable oil"
+   ],
+   "seasoning": [
+    "Orange sauce"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "honey-mustard-chicken-168",
+   "name": "Honey Mustard Chicken",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Chicken",
+   "sweetener": [
+    "Honey"
+   ],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Mustard",
+    "Herbs"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "lentil-salad-169",
+   "name": "Lentil Salad",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Lentils",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Lemon juice",
+    "Vegetables"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "cilantro-lime-chicken-170",
+   "name": "Cilantro Lime Chicken",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Chicken",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Cilantro",
+    "Lime"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "ratatouille-pizza-171",
+   "name": "Ratatouille Pizza",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Pizza dough",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Ratatouille vegetables"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": false
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "chicken-curry-172",
+   "name": "Chicken Curry",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Chicken",
+   "sweetener": [],
+   "fatOil": [
+    "Coconut milk"
+   ],
+   "seasoning": [
+    "Curry powder"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "pesto-pasta-salad-173",
+   "name": "Pesto Pasta Salad",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Pasta",
+   "sweetener": [],
+   "fatOil": [
+    "Pesto sauce"
+   ],
+   "seasoning": [
+    "Tomatoes",
+    "Vegetables"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": false
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "beef-and-mushroom-stir-fry-174",
+   "name": "Beef and Mushroom Stir-Fry",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Beef",
+   "sweetener": [],
+   "fatOil": [
+    "Vegetable oil"
+   ],
+   "seasoning": [
+    "Soy sauce"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": false
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "tofu-curry-175",
+   "name": "Tofu Curry",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Tofu",
+   "sweetener": [],
+   "fatOil": [
+    "Coconut milk"
+   ],
+   "seasoning": [
+    "Curry paste"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "greek-moussaka-176",
+   "name": "Greek Moussaka",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Eggplant",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Ground meat",
+    "Potatoes"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "brussels-sprouts-177",
+   "name": "Brussels Sprouts",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Brussels sprouts",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Balsamic glaze"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "baked-chicken-wings-178",
+   "name": "Baked Chicken Wings",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Chicken wings",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Seasonings"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "mango-coconut-popsicles-179",
+   "name": "Mango Coconut Popsicles",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Mango",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Coconut milk"
+   ],
+   "seasoning": [],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "ratatouille-pasta-180",
+   "name": "Ratatouille Pasta",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Pasta",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Ratatouille vegetables"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": false
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "chicken-noodle-soup-181",
+   "name": "Chicken Noodle Soup",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Chicken",
+   "sweetener": [],
+   "fatOil": [
+    "Vegetable oil"
+   ],
+   "seasoning": [
+    "Noodles",
+    "Vegetables"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": false
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "mango-salsa-182",
+   "name": "Mango Salsa",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Mango",
+   "sweetener": [],
+   "fatOil": [],
+   "seasoning": [
+    "Lime juice",
+    "Cilantro"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "spinach-salad-183",
+   "name": "Spinach Salad",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Spinach",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Balsamic vinaigrette"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "caramelized-onions-184",
+   "name": "Caramelized Onions",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Onions",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "strawberry-spinach-salad-185",
+   "name": "Strawberry Spinach Salad",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Spinach",
+   "sweetener": [],
+   "fatOil": [],
+   "seasoning": [
+    "Strawberries",
+    "Vinaigrette"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "ratatouille-tart-186",
+   "name": "Ratatouille Tart",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Vegetables",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Puff pastry",
+    "Herbs"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": false
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "honey-glazed-carrots-187",
+   "name": "Honey Glazed Carrots",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Carrots",
+   "sweetener": [
+    "Honey"
+   ],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "cucumber-salad-188",
+   "name": "Cucumber Salad",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Cucumbers",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Vinegar",
+    "Herbs"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "greek-lemon-potatoes-189",
+   "name": "Greek Lemon Potatoes",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Potatoes",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Lemon juice",
+    "Herbs"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "stuffed-tomatoes-190",
+   "name": "Stuffed Tomatoes",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Tomatoes",
+   "sweetener": [],
+   "fatOil": [],
+   "seasoning": [
+    "Herbs",
+    "Breadcrumbs"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": false
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "lemon-pepper-chicken-191",
+   "name": "Lemon Pepper Chicken",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Chicken",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Lemon pepper seasoning"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "chicken-shawarma-192",
+   "name": "Chicken Shawarma",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Chicken",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Shawarma seasoning"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "lemon-herb-roasted-chicken-193",
+   "name": "Lemon Herb Roasted Chicken",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Chicken",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Lemon",
+    "Herbs"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "greek-lemon-chicken-194",
+   "name": "Greek Lemon Chicken",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Chicken",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Lemon juice",
+    "Herbs"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "roasted-brussels-sprouts-195",
+   "name": "Roasted Brussels Sprouts",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Brussels sprouts",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Balsamic glaze"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "beef-burritos-196",
+   "name": "Beef Burritos",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Beef",
+   "sweetener": [],
+   "fatOil": [
+    "Vegetable oil"
+   ],
+   "seasoning": [
+    "Burrito seasoning"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "raspberry-spinach-salad-197",
+   "name": "Raspberry Spinach Salad",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Spinach",
+   "sweetener": [],
+   "fatOil": [],
+   "seasoning": [
+    "Raspberries",
+    "Vinaigrette"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "chicken-and-rice-soup-198",
+   "name": "Chicken and Rice Soup",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Chicken",
+   "sweetener": [],
+   "fatOil": [
+    "Vegetable oil"
+   ],
+   "seasoning": [
+    "Rice",
+    "Vegetables"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "vegetable-curry-199",
+   "name": "Vegetable Curry",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Mixed vegetables",
+   "sweetener": [],
+   "fatOil": [
+    "Coconut milk"
+   ],
+   "seasoning": [
+    "Curry paste"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "ratatouille-200",
+   "name": "Ratatouille",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Vegetables",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Herbs"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "biryani-201",
+   "name": "Biryani",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Rice",
+   "sweetener": [],
+   "fatOil": [
+    "Ghee"
+   ],
+   "seasoning": [
+    "Biryani masala",
+    "Spices"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "chole-bhature-202",
+   "name": "Chole Bhature",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Chickpeas",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Ghee"
+   ],
+   "seasoning": [
+    "Chole masala",
+    "Spices"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "samosa-204",
+   "name": "Samosa",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Potatoes",
+   "sweetener": [],
+   "fatOil": [
+    "Ghee"
+   ],
+   "seasoning": [
+    "Spices"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "aloo-gobi-205",
+   "name": "Aloo Gobi",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Potatoes",
+   "sweetener": [],
+   "fatOil": [
+    "Oil"
+   ],
+   "seasoning": [
+    "Cauliflower",
+    "Spices"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "chicken-biryani-206",
+   "name": "Chicken Biryani",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Chicken",
+   "sweetener": [],
+   "fatOil": [
+    "Ghee"
+   ],
+   "seasoning": [
+    "Basmati rice",
+    "Spices"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "vada-pav-207",
+   "name": "Vada Pav",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Potato",
+   "sweetener": [],
+   "fatOil": [
+    "Oil"
+   ],
+   "seasoning": [
+    "Pav bun",
+    "Chutney"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": false
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "pani-puri-208",
+   "name": "Pani Puri",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Semolina",
+   "sweetener": [
+    "Tamarind"
+   ],
+   "fatOil": [],
+   "seasoning": [
+    "Spiced water",
+    "Chutney"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": false
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "rajma-chawal-209",
+   "name": "Rajma Chawal",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Kidney beans",
+   "sweetener": [],
+   "fatOil": [
+    "Ghee"
+   ],
+   "seasoning": [
+    "Spices"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "chicken-curry-210",
+   "name": "Chicken Curry",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Chicken",
+   "sweetener": [],
+   "fatOil": [
+    "Oil"
+   ],
+   "seasoning": [
+    "Curry spices"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "vegetable-biryani-211",
+   "name": "Vegetable Biryani",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Mixed vegetables",
+   "sweetener": [],
+   "fatOil": [
+    "Ghee"
+   ],
+   "seasoning": [
+    "Basmati rice",
+    "Spices"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "chana-masala-212",
+   "name": "Chana Masala",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Chickpeas",
+   "sweetener": [],
+   "fatOil": [
+    "Oil"
+   ],
+   "seasoning": [
+    "Masala spices"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "paniyaram-213",
+   "name": "Paniyaram",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Fermented batter",
+   "sweetener": [],
+   "fatOil": [
+    "Oil"
+   ],
+   "seasoning": [
+    "Mustard seeds",
+    "Curry leaves"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "pav-bhaji-214",
+   "name": "Pav Bhaji",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Mixed vegetables",
+   "sweetener": [],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [
+    "Pav bread",
+    "Spices"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "hyderabadi-biryani-215",
+   "name": "Hyderabadi Biryani",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Basmati rice",
+   "sweetener": [],
+   "fatOil": [
+    "Ghee"
+   ],
+   "seasoning": [
+    "Meat/vegetables",
+    "Spices"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "dosa-216",
+   "name": "Dosa",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Rice",
+   "sweetener": [],
+   "fatOil": [
+    "Oil"
+   ],
+   "seasoning": [
+    "Potato masala",
+    "Chutney"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "chole-kulche-217",
+   "name": "Chole Kulche",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Chickpeas",
+   "sweetener": [],
+   "fatOil": [
+    "Ghee"
+   ],
+   "seasoning": [
+    "Kulcha bread",
+    "Spices"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "gobi-manchurian-218",
+   "name": "Gobi Manchurian",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Cauliflower",
+   "sweetener": [],
+   "fatOil": [
+    "Oil"
+   ],
+   "seasoning": [
+    "Manchurian sauce"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "mutton-biryani-219",
+   "name": "Mutton Biryani",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Mutton",
+   "sweetener": [],
+   "fatOil": [
+    "Ghee"
+   ],
+   "seasoning": [
+    "Basmati rice",
+    "Spices"
+   ],
+   "allergens": [],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Does not contain"
+  },
+  {
+   "id": "chicken-satay-223",
+   "name": "Chicken Satay",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Chicken",
+   "sweetener": [],
+   "fatOil": [
+    "Peanut oil"
+   ],
+   "seasoning": [
+    "Satay sauce",
+    "Spices"
+   ],
+   "allergens": [
+    "Peanuts"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "zucchini-noodles-with-pesto-225",
+   "name": "Zucchini Noodles with Pesto",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Zucchini",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Pesto sauce"
+   ],
+   "allergens": [
+    "Pine nuts",
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "rice-pudding-226",
+   "name": "Rice Pudding",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Rice",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Milk"
+   ],
+   "seasoning": [
+    "Cinnamon",
+    "Raisins"
+   ],
+   "allergens": [
+    "Rice",
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "shrimp-scampi-227",
+   "name": "Shrimp Scampi",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Shrimp",
+   "sweetener": [],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [
+    "Garlic",
+    "Lemon"
+   ],
+   "allergens": [
+    "Shellfish"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "shrimp-scampi-pasta-228",
+   "name": "Shrimp Scampi Pasta",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Shrimp",
+   "sweetener": [],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [
+    "Garlic",
+    "Lemon"
+   ],
+   "allergens": [
+    "Shellfish"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "garlic-shrimp-229",
+   "name": "Garlic Shrimp",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Shrimp",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Garlic"
+   ],
+   "allergens": [
+    "Shellfish"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "lemon-garlic-shrimp-230",
+   "name": "Lemon Garlic Shrimp",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Shrimp",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Lemon juice",
+    "Garlic"
+   ],
+   "allergens": [
+    "Shellfish"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "prawn-biryani-231",
+   "name": "Prawn Biryani",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Prawns",
+   "sweetener": [],
+   "fatOil": [
+    "Ghee"
+   ],
+   "seasoning": [
+    "Basmati rice",
+    "Spices"
+   ],
+   "allergens": [
+    "Shellfish"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "lobster-bisque-232",
+   "name": "Lobster Bisque",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Lobster",
+   "sweetener": [],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [
+    "Cream",
+    "Brandy"
+   ],
+   "allergens": [
+    "Shellfish",
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "caesar-shrimp-skewers-233",
+   "name": "Caesar Shrimp Skewers",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Shrimp",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Caesar dressing"
+   ],
+   "allergens": [
+    "Shellfish",
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "prawn-curry-235",
+   "name": "Prawn Curry",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Prawns",
+   "sweetener": [],
+   "fatOil": [
+    "Coconut milk"
+   ],
+   "seasoning": [
+    "Curry spices"
+   ],
+   "allergens": [
+    "Shellfish",
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "bacon-wrapped-shrimp-237",
+   "name": "Bacon-Wrapped Shrimp",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Shrimp",
+   "sweetener": [],
+   "fatOil": [
+    "Bacon"
+   ],
+   "seasoning": [
+    "Seasonings"
+   ],
+   "allergens": [
+    "Shellfish",
+    "Pork"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "shrimp-fried-rice-238",
+   "name": "Shrimp Fried Rice",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Shrimp",
+   "sweetener": [],
+   "fatOil": [
+    "Vegetable oil"
+   ],
+   "seasoning": [
+    "Soy sauce"
+   ],
+   "allergens": [
+    "Shellfish",
+    "Soybeans"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "tofu-stir-fry-240",
+   "name": "Tofu Stir-Fry",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Tofu",
+   "sweetener": [],
+   "fatOil": [
+    "Vegetable oil"
+   ],
+   "seasoning": [
+    "Soy sauce"
+   ],
+   "allergens": [
+    "Soybeans"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "tofu-scramble-242",
+   "name": "Tofu Scramble",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Tofu",
+   "sweetener": [],
+   "fatOil": [
+    "Vegetable oil"
+   ],
+   "seasoning": [
+    "Turmeric",
+    "Spices"
+   ],
+   "allergens": [
+    "Soybeans"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": true
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "chicken-teriyaki-243",
+   "name": "Chicken Teriyaki",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Chicken",
+   "sweetener": [],
+   "fatOil": [
+    "Soy sauce"
+   ],
+   "seasoning": [
+    "Honey",
+    "Ginger"
+   ],
+   "allergens": [
+    "Soybeans"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "teriyaki-beef-244",
+   "name": "Teriyaki Beef",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Beef",
+   "sweetener": [],
+   "fatOil": [
+    "Soy sauce"
+   ],
+   "seasoning": [
+    "Teriyaki sauce",
+    "Vegetables"
+   ],
+   "allergens": [
+    "Soybeans"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "sushi-rolls-245",
+   "name": "Sushi Rolls",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Sushi rice",
+   "sweetener": [],
+   "fatOil": [
+    "Soy sauce"
+   ],
+   "seasoning": [
+    "Nori (seaweed)",
+    "Fish"
+   ],
+   "allergens": [
+    "Soybeans",
+    "Fish"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": true,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "wheat-bread-246",
+   "name": "Wheat Bread",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Wheat flour",
+   "sweetener": [],
+   "fatOil": [],
+   "seasoning": [
+    "Salt"
+   ],
+   "allergens": [
+    "Wheat"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "zucchini-bread-247",
+   "name": "Zucchini Bread",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Zucchini",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Vegetable oil"
+   ],
+   "seasoning": [
+    "Flour"
+   ],
+   "allergens": [
+    "Wheat"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "chicken-noodle-casserole-248",
+   "name": "Chicken Noodle Casserole",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Chicken",
+   "sweetener": [],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [
+    "Noodles",
+    "Vegetables"
+   ],
+   "allergens": [
+    "Wheat"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "onion-rings-249",
+   "name": "Onion Rings",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Onions",
+   "sweetener": [],
+   "fatOil": [
+    "Vegetable oil"
+   ],
+   "seasoning": [
+    "Flour"
+   ],
+   "allergens": [
+    "Wheat"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "chicken-pot-pie-250",
+   "name": "Chicken Pot Pie",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Chicken",
+   "sweetener": [],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [
+    "Vegetables",
+    "Pastry"
+   ],
+   "allergens": [
+    "Wheat"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "grilled-portobello-mushroom-burger-251",
+   "name": "Grilled Portobello Mushroom Burger",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Portobello mushrooms",
+   "sweetener": [],
+   "fatOil": [],
+   "seasoning": [
+    "Burger bun",
+    "Vegetables"
+   ],
+   "allergens": [
+    "Wheat"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": true,
+    "dairyFree": true,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "aloo-paratha-252",
+   "name": "Aloo Paratha",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Potatoes",
+   "sweetener": [],
+   "fatOil": [
+    "Ghee"
+   ],
+   "seasoning": [
+    "Wheat flour",
+    "Spices"
+   ],
+   "allergens": [
+    "Wheat"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "oatmeal-raisin-cookies-253",
+   "name": "Oatmeal Raisin Cookies",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Oats",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [
+    "Flour"
+   ],
+   "allergens": [
+    "Wheat",
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "pancakes-254",
+   "name": "Pancakes",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Flour",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [
+    "Baking powder"
+   ],
+   "allergens": [
+    "Wheat",
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "carrot-cake-255",
+   "name": "Carrot Cake",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Carrots",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Vegetable oil"
+   ],
+   "seasoning": [
+    "Cinnamon"
+   ],
+   "allergens": [
+    "Wheat",
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "blueberry-muffins-256",
+   "name": "Blueberry Muffins",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Blueberries",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [
+    "Flour"
+   ],
+   "allergens": [
+    "Wheat",
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "chocolate-chip-cookies-257",
+   "name": "Chocolate Chip Cookies",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Flour",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [
+    "Chocolate chips"
+   ],
+   "allergens": [
+    "Wheat",
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "mushroom-risotto-258",
+   "name": "Mushroom Risotto",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Arborio rice",
+   "sweetener": [],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [
+    "Mushroom"
+   ],
+   "allergens": [
+    "Wheat",
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "cinnamon-rolls-259",
+   "name": "Cinnamon Rolls",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Flour",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [
+    "Cinnamon"
+   ],
+   "allergens": [
+    "Wheat",
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "pineapple-upside-down-cake-260",
+   "name": "Pineapple Upside-Down Cake",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Pineapple",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [
+    "Flour"
+   ],
+   "allergens": [
+    "Wheat",
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "apple-pie-261",
+   "name": "Apple Pie",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Apples",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [
+    "Cinnamon"
+   ],
+   "allergens": [
+    "Wheat",
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "banana-bread-262",
+   "name": "Banana Bread",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Bananas",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [
+    "Flour"
+   ],
+   "allergens": [
+    "Wheat",
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "vanilla-cupcakes-263",
+   "name": "Vanilla Cupcakes",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Flour",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [
+    "Vanilla extract"
+   ],
+   "allergens": [
+    "Wheat",
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "apple-crisp-264",
+   "name": "Apple Crisp",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Apples",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [
+    "Cinnamon"
+   ],
+   "allergens": [
+    "Wheat",
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "pasta-carbonara-265",
+   "name": "Pasta Carbonara",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Pasta",
+   "sweetener": [],
+   "fatOil": [
+    "Bacon"
+   ],
+   "seasoning": [
+    "Egg",
+    "Parmesan cheese"
+   ],
+   "allergens": [
+    "Wheat",
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "blueberry-pancakes-266",
+   "name": "Blueberry Pancakes",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Flour",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [
+    "Blueberries"
+   ],
+   "allergens": [
+    "Wheat",
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "lemon-bars-267",
+   "name": "Lemon Bars",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Flour",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [
+    "Lemon juice"
+   ],
+   "allergens": [
+    "Wheat",
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "pumpkin-pie-268",
+   "name": "Pumpkin Pie",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Pumpkin",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [
+    "Cinnamon",
+    "Nutmeg"
+   ],
+   "allergens": [
+    "Wheat",
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "mixed-berry-pie-269",
+   "name": "Mixed Berry Pie",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Mixed berries",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [
+    "Flour"
+   ],
+   "allergens": [
+    "Wheat",
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "garlic-bread-270",
+   "name": "Garlic Bread",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Bread",
+   "sweetener": [],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [
+    "Garlic"
+   ],
+   "allergens": [
+    "Wheat",
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "berry-cobbler-271",
+   "name": "Berry Cobbler",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Mixed berries",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [
+    "Flour"
+   ],
+   "allergens": [
+    "Wheat",
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "baked-ziti-272",
+   "name": "Baked Ziti",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Pasta",
+   "sweetener": [],
+   "fatOil": [
+    "Cheese"
+   ],
+   "seasoning": [
+    "Tomato sauce"
+   ],
+   "allergens": [
+    "Wheat",
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": null
+  },
+  {
+   "id": "key-lime-pie-273",
+   "name": "Key Lime Pie",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Lime juice",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [
+    "Graham cracker crust"
+   ],
+   "allergens": [
+    "Wheat",
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "lemon-poppy-seed-muffins-274",
+   "name": "Lemon Poppy Seed Muffins",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Flour",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [
+    "Lemon zest",
+    "Poppy seeds"
+   ],
+   "allergens": [
+    "Wheat",
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "chicken-quesadilla-275",
+   "name": "Chicken Quesadilla",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Chicken",
+   "sweetener": [],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [
+    "Cheese"
+   ],
+   "allergens": [
+    "Wheat",
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "pancake-stack-276",
+   "name": "Pancake Stack",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Flour",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [
+    "Maple syrup"
+   ],
+   "allergens": [
+    "Wheat",
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "strawberry-shortcake-277",
+   "name": "Strawberry Shortcake",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Strawberries",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Whipped cream"
+   ],
+   "seasoning": [
+    "Shortcake"
+   ],
+   "allergens": [
+    "Wheat",
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "berry-crumble-278",
+   "name": "Berry Crumble",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Mixed berries",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [
+    "Oats",
+    "Cinnamon"
+   ],
+   "allergens": [
+    "Wheat",
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "raspberry-cheesecake-279",
+   "name": "Raspberry Cheesecake",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Cream cheese",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [
+    "Graham cracker crust",
+    "Raspberries"
+   ],
+   "allergens": [
+    "Wheat",
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "oatmeal-raisin-cookies-280",
+   "name": "Oatmeal Raisin Cookies",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Oats",
+   "sweetener": [
+    "Brown sugar"
+   ],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [
+    "Raisins",
+    "Cinnamon"
+   ],
+   "allergens": [
+    "Wheat",
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "apple-crisp-281",
+   "name": "Apple Crisp",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Apples",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [
+    "Cinnamon",
+    "Oats"
+   ],
+   "allergens": [
+    "Wheat",
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "chicken-enchiladas-282",
+   "name": "Chicken Enchiladas",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Chicken",
+   "sweetener": [],
+   "fatOil": [
+    "Enchilada sauce"
+   ],
+   "seasoning": [
+    "Cheese",
+    "Tortillas"
+   ],
+   "allergens": [
+    "Wheat",
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "caesar-salad-wrap-283",
+   "name": "Caesar Salad Wrap",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Romaine lettuce",
+   "sweetener": [],
+   "fatOil": [
+    "Caesar dressing"
+   ],
+   "seasoning": [
+    "Parmesan cheese",
+    "Croutons"
+   ],
+   "allergens": [
+    "Wheat",
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "s-mores-284",
+   "name": "S'mores",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Graham crackers",
+   "sweetener": [
+    "Marshmallows"
+   ],
+   "fatOil": [
+    "Chocolate"
+   ],
+   "seasoning": [],
+   "allergens": [
+    "Wheat",
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "cinnamon-rolls-286",
+   "name": "Cinnamon Rolls",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Dough",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [
+    "Cinnamon",
+    "Icing"
+   ],
+   "allergens": [
+    "Wheat",
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "chicken-caesar-salad-287",
+   "name": "Chicken Caesar Salad",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Chicken",
+   "sweetener": [],
+   "fatOil": [
+    "Caesar dressing"
+   ],
+   "seasoning": [
+    "Romaine lettuce",
+    "Croutons"
+   ],
+   "allergens": [
+    "Wheat",
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "vegetable-lasagna-288",
+   "name": "Vegetable Lasagna",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Vegetables",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Tomato sauce",
+    "Cheese"
+   ],
+   "allergens": [
+    "Wheat",
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "chicken-alfredo-pizza-289",
+   "name": "Chicken Alfredo Pizza",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Pizza dough",
+   "sweetener": [],
+   "fatOil": [],
+   "seasoning": [
+    "Chicken",
+    "Alfredo sauce"
+   ],
+   "allergens": [
+    "Wheat",
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "caesar-pasta-salad-290",
+   "name": "Caesar Pasta Salad",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Pasta",
+   "sweetener": [],
+   "fatOil": [
+    "Caesar dressing"
+   ],
+   "seasoning": [
+    "Romaine lettuce",
+    "Parmesan cheese"
+   ],
+   "allergens": [
+    "Wheat",
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "baked-apple-291",
+   "name": "Baked Apple",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Apples",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [
+    "Cinnamon",
+    "Oats"
+   ],
+   "allergens": [
+    "Wheat",
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "apple-pie-292",
+   "name": "Apple Pie",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Apples",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [
+    "Cinnamon",
+    "Pastry"
+   ],
+   "allergens": [
+    "Wheat",
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "chicken-parmesan-293",
+   "name": "Chicken Parmesan",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Chicken",
+   "sweetener": [],
+   "fatOil": [
+    "Olive oil"
+   ],
+   "seasoning": [
+    "Tomato sauce",
+    "Cheese"
+   ],
+   "allergens": [
+    "Wheat",
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "pumpkin-pie-294",
+   "name": "Pumpkin Pie",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Pumpkin",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [
+    "Pumpkin spice",
+    "Pastry"
+   ],
+   "allergens": [
+    "Wheat",
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "blueberry-muffins-295",
+   "name": "Blueberry Muffins",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Flour",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [
+    "Blueberries"
+   ],
+   "allergens": [
+    "Wheat",
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "sausage-and-pepper-pizza-296",
+   "name": "Sausage and Pepper Pizza",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Pizza dough",
+   "sweetener": [],
+   "fatOil": [],
+   "seasoning": [
+    "Sausage",
+    "Bell peppers"
+   ],
+   "allergens": [
+    "Wheat",
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "beef-wellington-297",
+   "name": "Beef Wellington",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Beef",
+   "sweetener": [],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [
+    "Mushrooms",
+    "Puff pastry"
+   ],
+   "allergens": [
+    "Wheat",
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "baked-ziti-298",
+   "name": "Baked Ziti",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Pasta",
+   "sweetener": [],
+   "fatOil": [],
+   "seasoning": [
+    "Tomato sauce",
+    "Cheese"
+   ],
+   "allergens": [
+    "Wheat",
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "jalebi-299",
+   "name": "Jalebi",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Flour",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Ghee"
+   ],
+   "seasoning": [
+    "Saffron syrup"
+   ],
+   "allergens": [
+    "Wheat",
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "butter-naan-300",
+   "name": "Butter Naan",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Flour",
+   "sweetener": [],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [],
+   "allergens": [
+    "Wheat",
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "tiramisu-301",
+   "name": "Tiramisu",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Ladyfingers",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Mascarpone cheese",
+    "Coffee liqueur"
+   ],
+   "seasoning": [
+    "Cocoa powder"
+   ],
+   "allergens": [
+    "Wheat",
+    "Dairy",
+    "Alcohol"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "chocolate-chip-pancakes-303",
+   "name": "Chocolate Chip Pancakes",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Flour",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [
+    "Chocolate chips"
+   ],
+   "allergens": [
+    "Wheat",
+    "Dairy",
+    "Cocoa"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "lemon-bars-304",
+   "name": "Lemon Bars",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Lemon juice",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [
+    "Flour",
+    "Eggs"
+   ],
+   "allergens": [
+    "Wheat",
+    "Dairy",
+    "Eggs"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "pecan-pie-305",
+   "name": "Pecan Pie",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Pecans",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [
+    "Corn syrup"
+   ],
+   "allergens": [
+    "Wheat",
+    "Dairy",
+    "Nuts"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "zucchini-bread-306",
+   "name": "Zucchini Bread",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Zucchini",
+   "sweetener": [
+    "Sugar"
+   ],
+   "fatOil": [
+    "Butter"
+   ],
+   "seasoning": [
+    "Cinnamon",
+    "Nuts"
+   ],
+   "allergens": [
+    "Wheat",
+    "Dairy",
+    "Nuts"
+   ],
+   "dietary": {
+    "vegetarian": true,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  },
+  {
+   "id": "hawaiian-pizza-308",
+   "name": "Hawaiian Pizza",
+   "featured": false,
+   "category": null,
+   "shape": null,
+   "main": "Pizza dough",
+   "sweetener": [],
+   "fatOil": [],
+   "seasoning": [
+    "Pineapple",
+    "Ham"
+   ],
+   "allergens": [
+    "Wheat",
+    "Pork",
+    "Dairy"
+   ],
+   "dietary": {
+    "vegetarian": false,
+    "vegan": false,
+    "dairyFree": false,
+    "glutenFree": false
+   },
+   "prediction": "Contains"
+  }
+ ]
+}
