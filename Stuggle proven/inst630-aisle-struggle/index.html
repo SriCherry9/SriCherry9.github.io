@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Allergen Aisle</title>
+  <meta name="description" content="An interactive grocery aisle. Pick a product to see its ingredients, allergens and dietary facts.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#aisle">Skip to the products</a>
+
+  <header class="topbar">
+    <div class="brand">
+      <h1>The Allergen Aisle</h1>
+      <p class="tagline">Pick a product to see what's inside.</p>
+    </div>
+
+    <div class="controls">
+      <div class="filters" role="group" aria-labelledby="filter-label">
+        <span id="filter-label" class="filters-label">Avoid:</span>
+        <div id="filter-chips" class="chips"></div>
+      </div>
+      <button type="button" id="compare-btn" class="btn" aria-haspopup="dialog">
+        Compare two products
+      </button>
+      <button type="button" id="insights-btn" class="btn btn--solid" aria-haspopup="dialog">
+        Aisle insights
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <p id="status" class="sr-only" role="status" aria-live="polite"></p>
+    <p id="loading" class="message">Stocking the shelves&hellip;</p>
+    <p id="error" class="message message--error" role="alert" hidden></p>
+    <ul id="aisle" class="aisle" aria-label="Products in the aisle" hidden></ul>
+  </main>
+
+  <footer class="footnote">
+    <p>
+      Ingredient and allergen details come from a course dataset, so &ldquo;none listed&rdquo; does not
+      mean &ldquo;none present.&rdquo; Dietary labels are estimated from the listed ingredients.
+      Always check the package.
+    </p>
+  </footer>
+
+  <!-- Product details overlay -->
+  <dialog id="product-dialog" class="overlay" aria-labelledby="pd-title">
+    <div class="panel" id="pd-panel">
+      <div class="panel-art" id="pd-art" aria-hidden="true"></div>
+
+      <div class="panel-body">
+        <div class="panel-top">
+          <p class="counter" id="pd-counter"></p>
+          <div class="panel-actions">
+            <button type="button" class="btn btn--small" id="pd-compare" aria-haspopup="dialog">
+              Compare with&hellip;
+            </button>
+            <button type="button" class="icon-btn" id="pd-close" aria-label="Close product details">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="panel-scroll" id="pd-scroll">
+          <div id="pd-content">
+            <p class="eyebrow" id="pd-category"></p>
+            <h2 id="pd-title" tabindex="-1"></h2>
+
+            <section class="block" aria-labelledby="pd-h-ingredients">
+              <h3 id="pd-h-ingredients">Ingredients</h3>
+              <p class="small" id="pd-ing-note"></p>
+              <dl id="pd-ingredients" class="ingredients"></dl>
+            </section>
+
+            <section class="block" aria-labelledby="pd-h-allergens">
+              <h3 id="pd-h-allergens">Allergens</h3>
+              <ul id="pd-allergens" class="badges"></ul>
+            </section>
+
+            <section class="block" aria-labelledby="pd-h-diet">
+              <h3 id="pd-h-diet">Dietary facts</h3>
+              <ul id="pd-diet" class="badges"></ul>
+              <p class="small">Estimated from the listed ingredients.</p>
+            </section>
+
+            <section class="block" aria-labelledby="pd-h-common">
+              <h3 id="pd-h-common">How common is this allergen?</h3>
+              <p class="small" id="pd-common-intro"></p>
+              <div class="chart-box" id="pd-chart-box">
+                <canvas id="pd-chart" aria-hidden="true"></canvas>
+              </div>
+              <ul id="pd-common-list" class="stat-list"></ul>
+            </section>
+          </div>
+        </div>
+
+        <nav class="pager" aria-label="Browse products">
+          <button type="button" class="pager-btn" id="pd-prev">
+            <span class="pager-arrow" aria-hidden="true">&larr;</span>
+            <span class="pager-text">
+              <span class="pager-hint">Previous</span>
+              <span class="pager-name" id="pd-prev-name"></span>
+            </span>
+          </button>
+          <button type="button" class="pager-btn pager-btn--next" id="pd-next">
+            <span class="pager-text">
+              <span class="pager-hint">Next</span>
+              <span class="pager-name" id="pd-next-name"></span>
+            </span>
+            <span class="pager-arrow" aria-hidden="true">&rarr;</span>
+          </button>
+        </nav>
+        <p class="sr-only" id="pd-live" role="status" aria-live="polite"></p>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Aisle insights overlay -->
+  <dialog id="insights-dialog" class="overlay overlay--narrow" aria-labelledby="in-title">
+    <div class="panel panel--stack" id="in-panel">
+      <div class="panel-body">
+        <div class="panel-top">
+          <p class="counter">Whole dataset</p>
+          <button type="button" class="icon-btn" id="in-close" aria-label="Close aisle insights">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div class="panel-scroll">
+          <h2 id="in-title" tabindex="-1">Aisle insights</h2>
+          <p class="small" id="in-intro"></p>
+
+          <section class="block" aria-labelledby="in-h-common">
+            <h3 id="in-h-common">Most common allergens</h3>
+            <div class="chart-box chart-box--tall"><canvas id="in-chart-allergens" aria-hidden="true"></canvas></div>
+            <ul id="in-allergen-list" class="stat-list"></ul>
+          </section>
+
+          <section class="block" aria-labelledby="in-h-split">
+            <h3 id="in-h-split">Recipes with and without listed allergens</h3>
+            <div class="chart-box chart-box--donut"><canvas id="in-chart-split" aria-hidden="true"></canvas></div>
+            <ul id="in-split-list" class="stat-list"></ul>
+          </section>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Compare two products overlay -->
+  <dialog id="compare-dialog" class="overlay" aria-labelledby="cp-title">
+    <div class="panel panel--stack" id="cp-panel">
+      <div class="panel-body">
+        <div class="panel-top">
+          <p class="counter">Side by side</p>
+          <button type="button" class="icon-btn" id="cp-close" aria-label="Close comparison">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div class="panel-scroll" id="cp-scroll">
+          <h2 id="cp-title" tabindex="-1">Compare two products</h2>
+
+          <div class="pickers">
+            <div class="picker picker--a">
+              <label for="cp-a">Product A</label>
+              <select id="cp-a"></select>
+            </div>
+            <button type="button" class="btn btn--small" id="cp-swap" aria-label="Swap product A and product B">
+              <span aria-hidden="true">&#8646;</span> Swap
+            </button>
+            <div class="picker picker--b">
+              <label for="cp-b">Product B</label>
+              <select id="cp-b"></select>
+            </div>
+          </div>
+
+          <p id="cp-summary" class="summary" role="status" aria-live="polite"></p>
+
+          <div id="cp-content">
+            <div class="struggle-note" role="note">
+              <strong>Struggle bus:</strong> what I want here is a Venn diagram (or a matrix or heat map) that shows which items two products share.
+              <strong>Chart.js 4.6.1 has no Venn, matrix or heat-map chart type</strong>, so a pie chart is the nearest thing it offers.
+              A pie only shows how many items are shared or unique, not which ones, so the lists under each pie carry that.
+            </div>
+            <section class="block" aria-labelledby="cp-h-ing">
+              <h3 id="cp-h-ing">Ingredients</h3>
+              <p class="small">Matched by name, ignoring capital letters and a trailing &ldquo;s&rdquo;. &ldquo;Lemon&rdquo; and &ldquo;Lemon juice&rdquo; count as different.</p>
+              <div class="chart-box chart-box--pie" id="cp-matrix-box">
+                <canvas id="cp-matrix" aria-hidden="true"></canvas>
+              </div>
+              <div id="cp-ing-sets" class="sets"></div>
+            </section>
+
+            <section class="block" aria-labelledby="cp-h-all">
+              <h3 id="cp-h-all">Allergens</h3>
+              <p class="small" id="cp-all-note"></p>
+              <div class="chart-box chart-box--pie" id="cp-radar-box">
+                <canvas id="cp-radar" aria-hidden="true"></canvas>
+              </div>
+              <div id="cp-all-sets" class="sets"></div>
+            </section>
+
+            <details class="devnote" id="cp-devnote">
+              <summary>Struggle bus: what Chart.js can and cannot do here</summary>
+              <div id="cp-devnote-body">
+                <p class="small"><strong>Library:</strong> Chart.js 4.6.1 (vendored). No workarounds are used in this version.</p>
+                <ul class="small">
+                  <li><strong>Wanted:</strong> a Venn, matrix or heat map of shared ingredients and allergens.</li>
+                  <li><strong>Not supported:</strong> Chart.js has none of those chart types.</li>
+                  <li><strong>Shown instead:</strong> the built-in pie chart with default options. It gives counts only (only A / in both / only B), and cannot show overlap as overlapping shapes or name the items.</li>
+                  <li><strong>Accessibility:</strong> a canvas has no keyboard focus and nothing for a screen reader. The lists carry the data.</li>
+                </ul>
+              </div>
+              </details>
+          </div>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="vendor/chart.umd.js"></script>
+  <script src="vendor/gsap.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
